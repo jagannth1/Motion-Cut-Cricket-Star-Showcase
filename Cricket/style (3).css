@@ -1,0 +1,357 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    color: #333;
+}
+    /* body {
+  
+} */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+     width: 100%;
+    height: 10%; 
+    /* background-color: #0d47a1; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* gap: 10vw; */
+    text-align: center;
+  
+    /* padding: 20px; */
+}
+
+#logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+    /* font-size: 1vw; */
+    /* background-color: #4d545f; */
+}
+
+#logo h1 {
+    margin: 0;
+   padding-left: 2vw;
+    font-size: 1.2vw;
+    /* color: #000000; */
+}
+
+#link{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    /* background-color: #000000; */
+}
+
+#page1{
+    width: 100%;
+    height: 60%;
+    background-color: #0d47a1;
+}
+#page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#featured-players, #top-matches, #fan-zone {
+    margin: 20px;
+    padding: 20px;
+    /* background-color: rgb(187, 87, 87); */
+    border-radius: 8px;
+}
+
+#player-list {
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: #f44336;/ */
+}
+
+.player-card {
+    width: 20%;
+    height: 40vh;
+    /* background-color: #374650; */
+    border-radius: 8px;
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+    padding: 10px;
+    text-align: center;
+    line-height: 4vh;
+    
+  
+}
+
+#featured-players{
+    width: 100%;
+    min-height: 100%;
+  flex-wrap: wrap;
+  margin-top: 8vh;
+    /* background-color: #333; */
+}
+
+ #title{
+  padding: 2vh;
+  padding-left: 45%;
+    /* background-color: #000000; */
+}
+.player-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+#top-matches{
+
+    width: 100%;
+    height: 50%;
+    margin-bottom: 7vh;
+
+    /* padding: 5vh; */
+    /* background-color: rgb(226, 138, 14); */
+}
+
+#top-matches h2{
+    margin-bottom: 2vh;
+}
+#match-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 5vh;
+}
+
+.match-card {
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 1vh;
+    border-radius: 8px;
+    line-height: 2.5vw;
+}
+
+.match-card a{
+  padding: 2vh;
+  margin-top: 0.2vh;
+    background-color: black;
+    color: white;
+}
+
+#fan-zone {
+    margin-top: 20px;
+    background-color: #131212;
+    border: 1px solid #f44336;
+}
+
+#fan-story {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0d47a1;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+#page2{
+    width: 100%;
+    height: 50%;
+}
+#player-map{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    header {
+        width: 100%;
+        height: 15%;
+        /* background-color: #0d47a1; */
+        color: white;
+         text-align: center; 
+         padding: 20px; 
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    #title{
+        padding: 2vh;
+        padding-left: 22%;
+          /* background-color: #000000; */
+      }
+    
+      #page1{
+        width: 100%;
+        height: 60%;
+        background-color: #0d47a1;
+    }
+    #page1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+
+    #featured-players #top-matches, #fan-zone {
+        margin: 20px; 
+         padding: 20px; 
+         background-color: rgb(187, 87, 87);
+        border-radius: 8px;
+    }
+   
+    #player-list {
+        width: 100%;
+        min-height:100%;
+        display: flex;
+         flex-wrap: wrap; 
+        align-items: center;
+        justify-content:center ;
+        flex-direction: column;
+        /* background-color: #f44336; */
+    }
+    
+    .player-card {
+        width: 100%;
+        height: 40vh;
+         /* background-color: #374650;  */
+        border-radius: 8px;
+       
+        padding: 10px;
+        text-align: center;
+        
+      
+    }
+    
+    #featured-players{
+        width: 100%;
+        min-height: 100%;
+      flex-direction: column;
+        /* background-color: #333; */
+    }
+    .player-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #top-matches{
+
+        width: 100%;
+        height: 90%;
+        margin-bottom: 7vh;
+    
+        /* padding: 5vh; */
+        /* background-color: rgb(226, 138, 14); */
+    }
+    
+    #top-matches h2{
+        margin-bottom: 2vh;
+    }
+    #match-list {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 5vh;
+        /* background-color: #0d47a1; */
+    }
+    
+    .match-card {
+        width: 100%;
+        height: 70%;
+        /* background-color: #ae6161; */
+        padding: 20px;
+        margin-bottom: 1vh;
+        border-radius: 8px;
+        line-height: 11vw;
+    }
+    
+    .match-card a{
+      padding: 10px;
+      border-radius: 2vh;
+      /* margin-top: 2vh; */
+      margin-top: 0.2vh;
+        background-color: rgb(3, 3, 3);
+        /* color: white; */
+    }
+    
+   
+    #logo h1 {
+        margin: 0;
+       padding-left: 2vw;
+        font-size: 2.5vw;
+        /* color: #000000; */
+    }
+    
+    #link{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:5vw;
+        /* font-size: 2.5vw; */
+
+        /* background-color: #000000; */
+    }
+#link a{
+    font-size: 3.5vw;
+}
+
+#page2{
+    width: 100%;
+    height: 50%;
+    margin-top: 2vh;
+   
+}
+#player-map{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+}
+    
